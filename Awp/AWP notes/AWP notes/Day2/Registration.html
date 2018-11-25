@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User registration Form</title>
+	<script src="Scripts/registration.js"></script>
+	<script src="Scripts/Common.js"></script>
+	<script type="text/javascript">
+		var database = new allUsers();//create the object
+		function populatetable(){
+			var table = $("tblRecords");
+			table.innerHTML = '<tr><th>User ID</th><th>User Name</th><th>User Email</th><th>Options</th></tr>';
+			
+			var data = database.getAll();
+			for(i = 0;i < data.length;i++){
+			var row = '<tr><td>' + data[i].id +'</td><td>';
+			row += data[i].name + '</td><td>';
+			row += data[i].address + '</td><td>';
+			row += "Edit</td></tr>";
+			table.innerHTML+=row;
+			}
+		}
+		function onSubmit(){
+			var id = $("txtId").value;
+			var name = $("txtName").value;
+			var email = $("txtEmail").value;
+			var userObj = new user(id, name, email);
+			database.registerUser(userObj);
+			populatetable();//calling the method...
+		}
+	</script>
+	<link rel="stylesheet" type="text/css" href="Content/myStyle.css">
+</head>
+<body>
+	<div>
+		<h3>Register here</h3>
+		<p style="border: 2px solid blue">
+			<input type="number" id="txtId" placeholder="Enter ID"/>			
+			<input type="text" id="txtName" placeholder="Enter UR Name"/>
+			<input type="email" id="txtEmail" placeholder="Enter EMail Address"/>
+			<button id="btnRegister" onclick="onSubmit()">Register</button>
+		</p>
+	</div>
+	<div>
+		<h3>People who are already registered</h3>
+		<table id="tblRecords" border="1" width="90%">
+
+		</table>
+	</div>
+</body>
+</html>

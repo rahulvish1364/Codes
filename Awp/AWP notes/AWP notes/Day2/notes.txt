@@ -1,0 +1,44 @@
+Web App: App that runs on internet and viewed thro a thin software called browser.
+Browser is a window which allows to view web pages that are created using markup tags(HTML).
+internet is a large networking environment where data can be shared across the globe using protocols like HTTP. 
+HyperText Transfer protocol is a std for sharing text based information across the machines. Each machine is identified by address. This address is also called as IP Address. Users will type the address of the machine that U wish to access and find the files(Text based) stored in that machine. The files are stored in a sp location supported by a software called Web server. Web server is a software that processes the requests obtained by it thro a Web request and returns the contents that the User has requested. 
+Examples are Apache TomCat server(JSP, PHP, Perl), Websphere(IBM)(Open source), IIS(Internet Information Services from MS)(ASP.NET, ASP and Windows technologies).
+Each of these web servers have an adaptation to a technology that is created for their usage.
+
+The webpages are grouped into folders and are saved as .HTML or htm pages. 
+
+What is HTML?
+ HTML is a code that is used to structure a document that is accessible thro internet and viewed thro browsers. The content could be structured content and will contain majorly text that could provide info about a certain topic or about itself. Content could be text, images, tables, forms, paragraphs, lists, links to other documents and so forth.
+
+ These pages are creatable using any text editor. Sublime Text is one of prominent text editors for creating HTML pages. Notepad++, Visual Studio Code and Visual Studio are some of the major text editors for creating Web pages.
+
+ How to create these pages:
+ There is a std for creating and designing the web content. These stds are defined by an Organization called WWW(World Wide Web).
+HTML is currently available as v5.0 which has a certain tags that can be used to format(Mark) the text based on the intention of that text. 
+Tags are placed within the arrow braces and the browser will understand it as a sp format and the contents of that tag will be formated as hyper text. Hypertext means text about itself that can lead to an extra information..
+HTML pages are static. The pages are to be refreshed after loading to the browser if some modified content has to be displayed. In other words, Its not dynamic.
+
+Some of the important tags of HTML:
+DOCTYPE is used to provide the type info about the Document. html implies its HTML5 document. 
+every html doc is started with an <html></html>
+every doc template will have 2 sections: head and body.
+body is the visible part and head is the information part.
+The document can have article, section, p, div and many more tags. 
+For listings: ol and ul. each item is represented with li which can have its own set of styles for its documents.
+To link additional files like css U should use a tag called link which takes attributes(Properties) like href which contain the location of the file. 
+The location of the file is determined by URL(Uniform Resource locator).  The filel info contains 2 parts: the protocol and the physical location of the file. 
+By default the protocol is HTTP.  The location of the file could be absolute path or the relative path.
+To display additional files on click of a mouse button, U can use anchor tags"<a>". Its a self closing tag that contain attributes like href which contains the url of the page that U R requesting.  
+
+
+
+
+
+
+
+
+
+
+
+
+

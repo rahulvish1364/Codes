@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration form</title>
+	<meta charset="utf-8">
+	<meta name="keywords" content="Form, html, training, CDAC, DAC"/>
+	<meta name="description" content="Learning HTML thro a CDAC course"/>
+	<meta name="author" content="Phaniraj B.N."/>
+	<meta name="revised" content="Phaniraj, 26/09/2018"/>
+	<!-- <meta http-equiv="refresh" content="5"/> -->
+</head>
+<body>
+	<script>
+		window.addEventListener('load', function(){
+			document.getElementById('btnSave').addEventListener('click', function(){
+				var content = '';
+				content = "The name entered is " + document.getElementById('txtname').value;
+				content += "<br/>The EMail entered is " + document.getElementById('txtemail').value;
+				content += "<br/>The Date of Birth entered is " + document.getElementById('txtDate').value;
+				document.getElementById('divArea').innerHTML = content;
+			})
+		})
+	</script>
+	<h1>User registration form</h1>
+	<form>
+		<center><div style="border: solid red; border-radius: 10px;">
+			<h2>Please provide UR Details here</h2>
+			<p>
+				<input type="text" required placeholder="Enter UR Name here" id="txtname" />
+			</p>
+			<p>
+				<input type="email" required placeholder="Enter UR Email Address" id="txtemail" />
+			</p>
+			<p>
+				<input type="date" required placeholder="Enter UR Date of Birth"  id="txtDate"/>
+			</p>
+			<p><input type="Password" required placeholder="Enter the Password"  id="txtpwd"/>
+			<p>
+				Please rate us:<input type="range" min="1" max="10" value="8"  id="rgRate"/>
+			</p>
+			<p>
+				<button type="button" id="btnSave">Register</button>
+			</p>
+		</div>
+		<div id="divArea">
+
+		</div>
+	</form>
+	</center>
+</body>
+</html>

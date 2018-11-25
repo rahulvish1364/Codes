@@ -1,0 +1,7 @@
+﻿  functionTemplate.cpp
+e:\coding\cpp_29aug2018\cpp_29aug2018\day2\day2\functiontemplate.cpp(27): warning C4244: 'argument': conversion from 'double' to 'T2', possible loss of data
+          with
+          [
+              T2=int
+          ]
+  Day2.vcxproj -> E:\coding\CPP_29Aug2018\CPP_29Aug2018\Day2\Debug\Day2.exe

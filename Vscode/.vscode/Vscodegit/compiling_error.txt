@@ -1,0 +1,13 @@
+E:\coding\Vscode\.vscode\Vscodegit\Namespace.cpp: In function 'int main()':
+E:\coding\Vscode\.vscode\Vscodegit\Namespace.cpp:14:34: error: reference to 'gf' is ambiguous
+ cout<<"The value of the gf is "<<gf<<endl;
+                                  ^~
+E:\coding\Vscode\.vscode\Vscodegit\Namespace.cpp:6:9: note: candidates are: int myns::rahul::gf
+     int gf=90;
+         ^~
+E:\coding\Vscode\.vscode\Vscodegit\Namespace.cpp:4:7: note:                 int myns::gf
+   int gf=10;
+       ^~
+E:\coding\Vscode\.vscode\Vscodegit\Namespace.cpp:15:34: error: 'fd' was not declared in this scope
+ cout<<"The value of the gf is "<<fd<<endl;
+                                  ^~

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="form, cdac, dac, pgdac">
+    <meta name="description" content="Demonstration of a form">
+    <link rel="stylesheet" type="text/css" href="Contents/stylesheet.css">
+
+</head>
+
+<body background="187011.jpg">
+    <script type="text/javascript">
+        window.addEventListener('load', function() {
+            document.getElementById('btn').addEventListener('click', function() {
+                var content = '';
+                content = "The name is " + document.getElementById('name').value;
+                content += "<br/> The email address is " + document.getElementById('emailtxt').value;
+                content += "<br/> Enter your DOB " + document.getElementById('datetxt').value;
+                content += "<br/> The password is  " + document.getElementById('pwd').value;
+                document.getElementById('diva').innerHTML = content;
+                if () {} else {}
+
+
+            })
+        })
+
+    </script>
+    <center>
+        <h1 class="headed">CDAC</h1>
+    </center>
+    <center><img src="cdaclogo.jpg" width="200" , height="70"></center>
+    <center>
+        <h2>Form for college Admission</h2>
+    </center>
+    <center>
+        <h3 class="mandat">Mandatory Information to be filled</h3>
+    </center>
+    <center>
+        <form>
+            <div style="border: solid black; border-radius: 30px;" align="center">
+                <h3>Please provide details here</h3>
+                <p><input type="text" style="color:grey;" required placeholder="Enter your name" id="name"></p>
+                <p><input type="email" align="center" style="color:grey; required placeholder=" Enter your email address" id="emailtxt"></p>
+                <p><input type="date" required placeholder="Enter your DOB" id="datetxt"></p>
+                <p><input type="password" required placeholder="Enter your password" id="pwd"></p>
+
+                <p><input type="radio" name="gender" value="male"> Male</p>
+                <p><input type="radio" name="gender" value="female"> Female</p>
+                <p><input type="radio" name="gender" value="other"> Other</p>
+                <select>
+                    <option value="">Select your course</option>
+                    <option value="PG-DAC">PG-DAC</option>
+                    <option value="PG-DITISS">PG-DITISS</option>
+                    <option value="PG-DIOT">PG-DIOT</option>
+                    <option value="PG-DBDA">PG-DBDA</option>
+                </select>
+                <p>Please rate us<input type="range" min="1" max="10" value="8" id="rgrate"></p>
+                <p><button type="button" id="btn">Save</button></p>
+            </div>
+            <div id="diva"></div>
+
+        </form>
+    </center>
+</body>
+
+</html>

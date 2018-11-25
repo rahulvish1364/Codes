@@ -1,0 +1,59 @@
+Assignments
+1. Implement following on number:
+	a. Find a number is Shakuntala Devi's number or not.
+	b. Find range of Shakuntala Devi's number's.
+	c. Find a number is Armstrong number or not.
+	d. Find range of Armstrong number's.
+	e. Exit.
+2. Implement Pascal's numbers.
+3. print following shapes:
+	Ex: if n=4
+	*
+	**
+	***
+	****
+
+	********
+	***  ***
+	**    **
+	*      *
+	**    **
+	***  ***
+	********
+
+	    *
+	   * *
+	  * * *
+	 * * * *
+	  * * *
+	   * *
+	    *
+4. Implement following sorting techniques, using linked list(OOPS Assertion concept):
+	a. Bubble sort.
+	b. Selection sort.
+	c. Insertion sort.
+	d. Shell sort.
+	e. Count sort.
+	f. Merge sort.
+	g. Quick sort.
+	h. Radix/ Bucket sort.
+	i. Heap sort.
+5. Convert following:
+	a. Infix to prefix.
+	b. Infix to postfix.
+	c. Prefix to infix.
+	d. Prefix to postfix.
+	e. Postfix to infix.
+	f. Postfix to prefix.
+6. Add two huge positive numbers.
+7. Implement dynamic stack.
+8. Implement following for double linked list:
+	a. Insert at a given position.
+	b. Insert after a given node.
+	c. Delete at a given position.
+	d. Delete after a given position.
+	e. Reverse a linked list.
+	f. Separte odd and even nodes.
+	g. Display.
+	h. Exit.
+

@@ -1,0 +1,4 @@
+E:\coding\Algorithm\reversestring.cpp: In function 'int main()':
+E:\coding\Algorithm\reversestring.cpp:30:9: error: 'take' was not declared in this scope
+    take();
+         ^

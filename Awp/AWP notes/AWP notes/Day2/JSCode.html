@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Testing JS code</title>
+<!-- Everything inside this is interpreted by the JS interperter available in the browser that U view this page. -->
+	<script src="Scripts/SecondExample.js"></script>
+	<script>
+		//If U want to convert string data to a number or a floating value, we use JS's built in functions called parseInt and parseFloat...
+
+		function onBtnClick(){
+			var result = 0.0;
+			//get the first value
+			var v1 = parseFloat(document.getElementById('txtFirst').value);
+			//get the second value
+			var v2 = parseFloat(document.getElementById('txtSecond').value);
+			//get the selected option.
+			var option = document.getElementById('slOption').value;
+			/*if(option == "Add")
+				addFunc(v1, v2);
+			else if(option == "Subtract")
+				subFunc(v1, v2);
+			else if(option == "Multiply")
+				mulFunc(v1, v2);
+			else
+				divFunc(v1, v2);*/
+
+			switch (option) {
+				case "Add":
+					result = addFunc(v1, v2)
+					break;
+				case "Subtract":
+				result = subFunc(v1, v2)
+					break;
+				case "Multiply":
+				result = mulFunc(v1, v2)
+					break;
+				default:
+					result = divFunc(v1, v2);
+				break;
+			}
+			//Display the resulted value into a p
+			var display = document.getElementById('pDisplay');
+			display.innerHTML = "<b>The Answer: " + result +"</b>";
+		}
+	</script>
+</head>
+<body>
+	<div>
+		<h1> Calc Program</h1>
+		<p>
+			<input id="txtFirst" type="number" placeholder="Enter first value">
+		</p>
+		<p>
+			<input type="number" id="txtSecond" placeholder="Enter second value">
+		</p>
+		<p>Choose the operation:
+			<select id="slOption">
+				<option>Add</option>	
+				<option>Subtract</option>	
+				<option>Multiply</option>	
+				<option>Divide</option>	
+			</select>
+		</p>
+		<p>
+			<button id="btnSubmit" onclick="onBtnClick()">Get result</button>
+		</p>
+		<p id="pDisplay">
+		</p>
+	</div>
+</body>
+</html>

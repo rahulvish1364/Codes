@@ -1,0 +1,4 @@
+E:\coding\C++\dynamicarray.cpp: In function 'void input(int*, int)':
+E:\coding\C++\dynamicarray.cpp:36:9: error: 'temp' was not declared in this scope
+ display(temp,len);
+         ^~~~

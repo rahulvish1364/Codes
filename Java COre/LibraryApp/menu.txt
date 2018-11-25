@@ -1,0 +1,8 @@
+~~~~~~~~~~~~~~~Library Application~~~~~~~~~~~~~~~~~~~~~
+1. Display All Books
+2. Add new Book
+3. Remove a Book
+4. Update any Book
+5. Search by title
+6. Search by Author
+AnyOther Entry is said Considered As exit
